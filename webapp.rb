@@ -28,6 +28,6 @@ auth_token = '062a9945b655b7cb7057c13bfeb1333f'
 @client = Twilio::REST::Client.new account_sid, auth_token
  
 message = @client.account.sms.messages.create(:body => "The weather this morning is #{farenheit} degrees Farenheit.",
-    :to => "+19179029164",
+    :to => "+11111111111", #putinyourownnumber
     :from => "+19175254822")
 puts message.sid
